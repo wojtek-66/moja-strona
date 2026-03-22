@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(diego_torres-highway-4268179_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+}
+
+.imie 
+{
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 80px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+.opis {
+    font-size: 50px;
+    color: #666;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
