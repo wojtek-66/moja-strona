@@ -1,18 +1,131 @@
-.main {
-    position: relative;
-    min-height: 100vh;
+html,
+body {
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url('images/kwiaty-tlo.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
-.rose-bg{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
+.kartka {
+    border-radius: 1rem;
+    position: relative;
+    padding: 3rem;
+    margin: 2px;
+    box-shadow: 0 15px 60px #B8300C;
+    border: 2px solid #fff;
+    background: #FFF;
+    background: linear-gradient(33deg, rgba(255, 255, 255, 1) 0%, rgba(245, 218, 236, 1) 52%, rgba(255, 224, 173, 1) 100%);
+}
 
+@media screen and (min-width: 768px) {
+    .kartka {
+        max-width: 520px;
+    }
+}
+
+h2 {
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h1 {
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 7em;
+    color: #36022c;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+.kartka h1,
+.kartka h2 {
+    text-align: center;
+}
+
+.kartka h1 {
+    margin-bottom: 0;
+    letter-spacing: -1px;
+    text-shadow: 3px 7px #fff;
+}
+
+.kartka h2 {
+    margin-bottom: -1rem;
+    text-shadow: 3px 4px #ff38ff;
+}
+
+.zyczenia {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.zyczenia p {
+    font-weight: 200;
+    line-height: 150%;
+    text-align: center;
+}
+
+
+
+.kwiat-1 {
+    left: -40px;
+    top: -94px;
+    position: absolute;
+    background: url('images/flower-1.png') no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    z-index: 20;
+}
+
+.kwiat-2 {
+    left: calc(50% - 70px);
+    bottom: -80px;
+    position: absolute;
+    background: url('images/flower-2.png') no-repeat;
+    background-size: 100%;
+    width: 160px;
+    height: 160px;
+    z-index: 25;    
+}
+
+.kwiat-3 {
+    left: calc(50% - 160px);
+    bottom: -80px;
+    position: absolute;
+    background: url('images/flower-3.png') no-repeat;
+    background-size: 100%;
+    width: 160px;
+    height: 160px;
+    z-index: 15;    
+}
+
+.kwiat-4 {
+    right: -20px;
+    top: -80px;
+    position: absolute;
+    background: url('images/flower-4.png') no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    z-index: 15;    
 }
